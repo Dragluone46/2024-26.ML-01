@@ -9,3 +9,6 @@ jobs:
             - run: echo "Ciao sono una stringa 2"
             - run: python --version
             - run: pip -V
+            - run: ls -la
+            - run: pwd
+            - run: env
