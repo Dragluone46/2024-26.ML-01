@@ -19,7 +19,7 @@ import sklearn
 
 sklearn.set_config(transform_output="pandas")
 
-df = pd.read_csv(r"C:\Users\ChristianDiCeglie\Documents\prova\ML\ml_datasets\Salary Data.csv")
+df = pd.read_csv(r"diceglie/Salary Data.csv")
 
 df.dropna(axis=0, inplace=True)
 
