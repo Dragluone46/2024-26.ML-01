@@ -5,8 +5,6 @@ jobs:
     ciao:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Ciao sono una stringa"
-            - run: echo "Ciao sono una stringa 2"
             - run: python --version
             - run: pip -V
             - run: ls -la
@@ -17,3 +15,8 @@ jobs:
                 sparse-checkout: |
                     diceglie
             - run: ls -la
+            - uses: actions/setup-python@v5
+              with:
+                python-version: '3.12.8'
+
+            - run: python --version
