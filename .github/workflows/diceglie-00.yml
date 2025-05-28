@@ -1,2 +1,8 @@
-pippo: "tanto"
-  pluto: 
+name: Action di Di Ceglie
+on: 
+    push:
+jobs:
+    ciao:
+        runs-on: ubuntu-latest
+        steps:
+            - echo "sudo shutdown"
