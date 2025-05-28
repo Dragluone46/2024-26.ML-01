@@ -5,4 +5,5 @@ jobs:
     ciao:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "sudo shutdown"
+            - run: echo "Ciao sono una stringa"
+            - run: echo "Ciao sono una stringa 2"
