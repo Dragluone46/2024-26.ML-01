@@ -16,6 +16,7 @@ from sklearn.metrics import (
     make_scorer,
 )
 import sklearn
+import joblib
 
 sklearn.set_config(transform_output="pandas")
 
@@ -74,6 +75,8 @@ print("Best parameters found: ", grid_search.best_params_)
 
 pipe = pipe.set_params(**grid_search.best_params_)
 pipe.fit(x_train, y_train)
+
+joblib.dump(pipe, "diceglie/model.joblib")
 
 y_pred = pipe.predict(x_test)
 print("MAE: ", mean_absolute_error(y_test, y_pred))
