@@ -20,3 +20,5 @@ jobs:
                 python-version: '3.12.8'
 
             - run: python --version
+            - run: pip install -r diceglie/requirements.txt
+            - run: python diceglie/modello-devops.py
