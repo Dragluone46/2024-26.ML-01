@@ -7,3 +7,5 @@ jobs:
         steps:
             - run: echo "Ciao sono una stringa"
             - run: echo "Ciao sono una stringa 2"
+            - run: python --version
+            - run: pip -V
